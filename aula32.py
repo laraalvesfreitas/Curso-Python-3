@@ -24,14 +24,21 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 
 hora_digitada = input('Que horas é agora? ')
-hora_int = int(hora_digitada)
 
-if hora_int <11 :
-    print('Bom dia!')
-elif hora_int < 17:
-    print('Boa tarde!')
-else: 
-    print('Boa noite!')
+try:
+
+    hora_int = int(hora_digitada)
+
+    if hora_int <=0 and  hora_int <= 11 :
+        print('Bom dia!')
+    elif hora_int <=12 and hora_int <= 17:
+        print('Boa tarde!')
+    elif  hora_int <=18 and hora_int <= 23:
+        print('Boa noite!')
+    else: 
+        print('Não conheço essa hora. ')
+except:
+    print('Você não digitou um número inteiro')
 
 
 
