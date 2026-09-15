@@ -1,4 +1,19 @@
 """
+LISTAS - ÍNDICE
+1. Criando uma lista
+2. Índices (positivos e negativos)
+3. Alterando valores
+4. append
+5. insert
+6. pop
+7. del
+8. clear
+9. extend
+10. + (concatenação)
+11. for in com listas
+12. enumerate
+
+
 LISTAS EM PYTHON
 
 Tipo: list
@@ -6,15 +21,6 @@ Tipo: list
 - Suporta vários valores de qualquer tipo
 - Trabalha com índices e fatiamento
 - Permite adicionar, alterar e remover valores
-
-Métodos úteis:
-    append
-    insert
-    pop
-    del
-    clear
-    extend
-    +
 
 CRUD:
     Create - Criar
@@ -99,7 +105,6 @@ lista.pop()
 
 print(lista)
 
-
 # Podemos guardar o valor removido
 
 lista = [10, 20, 30, 40]
@@ -108,7 +113,6 @@ ultimo_valor = lista.pop()
 
 print(lista)
 print('Removido:', ultimo_valor)
-
 
 # Removendo pelo índice
 
@@ -130,7 +134,6 @@ lista = [10, 20, 30, 40]
 del lista[2]
 
 print(lista)
-
 
 # Também podemos usar índice negativo
 
