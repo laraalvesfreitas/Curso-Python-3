@@ -1,6 +1,7 @@
 """
 DESEMPACOTAMENTO - ÍNDICE
 1. Introdução ao desempacotamento com *
+2. Desempacotamento em chamadas de métodos e funções.
 
 
 DESEMPACOTAMENTO (UNPACKING)
@@ -29,3 +30,31 @@ Nesse exemplo:
 
 Saída: Lara
 """
+
+# ==================================================
+# 2. DESEMPACOTAMENTO EM CHAMADAS DE MÉTODOS E FUNÇÕES
+# ==================================================
+
+"""
+O * também pode ser usado para desempacotar um
+iterável (string, lista, tupla etc.) diretamente
+na chamada de uma função, passando cada item
+como um argumento separado.
+
+print(*lista) é equivalente a:
+print(lista[0], lista[1], lista[2], lista[3])
+"""
+
+string = 'ABCD'
+lista = ['Maria', 'Helena', 'Luiz', 'João']
+tupla = ('Python ', 'é', 'legal')
+salas = [
+    ['Maria', 'Helen'],
+    ['Elaine'],
+    ['luiz', 'João', 'Eduarda'],
+]
+
+print(*lista)
+print(*string)
+print(*tupla)
+print(*salas, sep='\n')

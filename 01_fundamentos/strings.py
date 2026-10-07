@@ -12,6 +12,7 @@ STRINGS - ÍNDICE
 10. .format()
 11. Formatação com operador %
 12. f-string avançada (alinhamento, precisão, !r)
+13. split, join e strip
 
 
 STRINGS
@@ -261,3 +262,41 @@ print(f'{1000.4873648123746:0=+10,.1f}')
 print(f'O hexadecimal de 1500 é {1500:08X}')
 
 print(f'{variavel!r}')
+
+# ==================================================
+# SPLIT E JOIN
+# ==================================================
+
+"""
+split() → divide uma string em uma lista,
+          usando o separador informado.
+
+join()  → une os itens de uma lista em uma
+          única string, usando o separador
+          informado antes do método.
+
+strip() → remove espaços em branco (ou outros
+          caracteres) do início e do fim da string.
+"""
+
+
+'''
+split e join com str e lista
+split -> Divide uma string
+join -> uma uma string
+'''
+
+frase = 'Olha só que   , função legal.         '
+
+lista_frases_sem_edicao = frase.split(',')
+
+lista_frases_com_edicao = []
+
+for trecho in lista_frases_sem_edicao:
+    lista_frases_com_edicao.append(trecho.strip())
+
+print(lista_frases_com_edicao)
+
+
+frases_unidas = '-'.join(lista_frases_com_edicao)
+print(frases_unidas)

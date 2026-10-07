@@ -4,6 +4,7 @@ IF / ELIF / ELSE - ÍNDICE
 2. Ordem de verificação das condições
 3. If independente de outros blocos
 4. Exemplo com condição intermediária verdadeira
+5. Operador ternário
 
 
 IF / ELIF / ELSE
@@ -111,3 +112,28 @@ if 10 == 10:
     print('Outro if')
 
 print('Fora do if')
+
+# ==================================================
+# OPERADOR TERNÁRIO (CONDICIONAL DE UMA LINHA)
+# ==================================================
+
+"""
+Operador ternário → permite escrever um if/else
+simples em uma única linha.
+
+Sintaxe:
+<valor> if <condição> else <outro valor>
+
+Também pode ser encadeado, formando vários
+"elif" na mesma linha.
+"""
+
+condicao = 10 == 10
+variavel = 'valor' if condicao else 'outro valor'
+print(variavel)
+
+digito = 9
+novo_digito = 0 if digito > 9 else digito
+print(novo_digito)
+
+print('valor' if False else 'outro valor ' if False else 'fim')
